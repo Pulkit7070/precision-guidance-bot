@@ -47,6 +47,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        hero: {
+          dark: "hsl(var(--hero-dark))",
+        },
+        steel: {
+          gradient: {
+            start: "hsl(var(--steel-gradient-start))",
+            end: "hsl(var(--steel-gradient-end))",
+          },
+          shine: "hsl(var(--metallic-shine))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
