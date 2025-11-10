@@ -51,10 +51,10 @@ export default function Contact() {
           </div>
           <div className="flex grow flex-col justify-center px-4 md:px-6 pt-32 pb-16">
             <h1 className="text-4xl font-bold md:text-5xl">
-              Visit Our Location
+              Get in Touch
             </h1>
             <p className="text-muted-foreground mb-5 text-base">
-              Find us at our showroom and technical center in Mumbai. Our precision tooling experts are ready to assist you.
+              Reach out to our precision tooling experts for consultations, quotes, and technical support.
             </p>
           </div>
           <BorderSeparator />
@@ -108,20 +108,6 @@ export default function Contact() {
                 </div>
               </div>
             </Box>
-          </div>
-          <BorderSeparator />
-          <div className="relative w-full h-[500px] overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.71637645!3d19.08219865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="G M Machinery Store Location"
-              className="w-full h-full"
-            />
           </div>
           <BorderSeparator />
           <div className="relative flex h-full min-h-[320px] items-center justify-center">

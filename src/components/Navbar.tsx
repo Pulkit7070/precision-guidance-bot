@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import gmLogo from "@/assets/gm-logo.png";
 
 const transition = {
   type: "spring" as const,
@@ -121,13 +120,8 @@ export function Navbar() {
   const [active, setActive] = useState<string | null>(null);
 
   return (
-    <div className="fixed top-8 inset-x-0 w-full px-4 z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <img src={gmLogo} alt="G M Machinery Store" className="h-12 w-12 object-contain" />
-          <span className="text-lg font-bold text-foreground hidden sm:block">G M Machinery</span>
-        </Link>
-        <Menu setActive={setActive}>
+    <div className="fixed top-8 inset-x-0 max-w-2xl mx-auto z-50">
+      <Menu setActive={setActive}>
         <Link to="/">
           <MenuItem setActive={setActive} active={active} item="Home" />
         </Link>
@@ -149,8 +143,7 @@ export function Navbar() {
         <Link to="/contact">
           <MenuItem setActive={setActive} active={active} item="Contact" />
         </Link>
-        </Menu>
-      </div>
+      </Menu>
     </div>
   );
 }
