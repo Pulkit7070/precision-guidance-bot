@@ -5,95 +5,67 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const ContactCTA = () => {
   return (
-    <section className="py-20 bg-hero-dark text-primary-foreground">
+    <section className="py-20 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Talk to Our Tooling Experts</h2>
-            <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground px-4">Talk to Our Tooling Experts</h2>
+            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
               Get personalized recommendations for your machining applications
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8 bg-card/95 backdrop-blur">
-              <h3 className="text-2xl font-semibold mb-6 text-foreground">Request a Quote</h3>
-              <form className="space-y-4">
-                <div>
-                  <Input
-                    type="text"
-                    placeholder="Your Name"
-                    className="bg-background"
-                  />
-                </div>
-                <div>
-                  <Input
-                    type="email"
-                    placeholder="Email Address"
-                    className="bg-background"
-                  />
-                </div>
-                <div>
-                  <Input
-                    type="tel"
-                    placeholder="Phone Number"
-                    className="bg-background"
-                  />
-                </div>
-                <div>
-                  <Input
-                    type="text"
-                    placeholder="Industry / Application"
-                    className="bg-background"
-                  />
-                </div>
-                <Button variant="hero" size="lg" className="w-full">
-                  Request Quotation
-                </Button>
-              </form>
-            </Card>
+            <div className="relative overflow-hidden rounded-lg shadow-lg" style={{ paddingBottom: '75%', height: 0 }}>
+              <iframe
+                src="https://www.google.com/maps?q=28.6488314,77.2263614&output=embed"
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
+                loading="lazy"
+                title="G M Machinery Store Location"
+              />
+            </div>
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-foreground">Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-lg bg-primary/20">
-                      <Phone className="w-5 h-5" />
+                    <div className="p-3 rounded-lg bg-primary/10">
+                      <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <div className="font-semibold mb-1">Phone</div>
-                      <div className="text-primary-foreground/70">+91-XXXX-XXXXXX</div>
+                      <div className="font-semibold mb-1 text-foreground">Phone</div>
+                      <div className="text-muted-foreground">+91-XXXX-XXXXXX</div>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-lg bg-primary/20">
-                      <Mail className="w-5 h-5" />
+                    <div className="p-3 rounded-lg bg-primary/10">
+                      <Mail className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <div className="font-semibold mb-1">Email</div>
-                      <div className="text-primary-foreground/70">info@gmmachinery.com</div>
+                      <div className="font-semibold mb-1 text-foreground">Email</div>
+                      <div className="text-muted-foreground">info@gmmachinery.com</div>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-lg bg-primary/20">
-                      <MapPin className="w-5 h-5" />
+                    <div className="p-3 rounded-lg bg-primary/10">
+                      <MapPin className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <div className="font-semibold mb-1">Location</div>
-                      <div className="text-primary-foreground/70">
-                        Industrial Area, Mumbai, India
+                      <div className="font-semibold mb-1 text-foreground">Location</div>
+                      <div className="text-muted-foreground">
+                        Industrial Area, Andheri East, Mumbai, Maharashtra 400093, India
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <Card className="p-6 bg-primary/10 backdrop-blur border-primary/20">
-                <h4 className="font-semibold text-lg mb-2">Business Hours</h4>
-                <div className="space-y-1 text-sm text-primary-foreground/70">
+              <Card className="p-6 bg-card border-border shadow-sm">
+                <h4 className="font-semibold text-lg mb-2 text-foreground">Business Hours</h4>
+                <div className="space-y-1 text-sm text-muted-foreground">
                   <div>Monday - Friday: 9:00 AM - 6:00 PM</div>
                   <div>Saturday: 9:00 AM - 2:00 PM</div>
                   <div>Sunday: Closed</div>

@@ -48,15 +48,12 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         hero: {
-          dark: "hsl(var(--hero-dark))",
+          light: "hsl(var(--hero-light))",
         },
-        steel: {
-          gradient: {
-            start: "hsl(var(--steel-gradient-start))",
-            end: "hsl(var(--steel-gradient-end))",
-          },
-          shine: "hsl(var(--metallic-shine))",
-        },
+        taupe: "hsl(var(--taupe))",
+        "soft-brown": "hsl(var(--soft-brown))",
+        "gentle-green": "hsl(var(--gentle-green))",
+        "muted-yellow": "hsl(var(--muted-yellow))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -90,10 +87,15 @@ export default {
             height: "0",
           },
         },
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
       },
     },
   },

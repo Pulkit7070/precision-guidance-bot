@@ -110,7 +110,7 @@ export default function Contact() {
             </Box>
           </div>
           <BorderSeparator />
-          <div className="relative flex h-full min-h-[320px] items-center justify-center">
+          <div className="relative flex h-full min-h-[400px] items-center justify-center py-16">
             <div
               className={cn(
                 'z--10 absolute inset-0 size-full',
@@ -120,21 +120,28 @@ export default function Contact() {
               )}
             />
 
-            <div className="relative z-1 space-y-6">
-              <h2 className="text-center text-3xl font-bold md:text-4xl">
-                Connect With Us
-              </h2>
-              <div className="flex flex-wrap items-center justify-center gap-4">
+            <div className="relative z-1 space-y-10 px-4">
+              <div className="text-center space-y-3">
+                <h2 className="text-3xl font-bold md:text-4xl">
+                  Connect With Us
+                </h2>
+                <p className="text-muted-foreground text-base max-w-xl mx-auto">
+                  Follow us on social media for the latest updates, product launches, and industry insights.
+                </p>
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-6">
                 {socialLinks.map((link) => (
                   <a
                     key={link.label}
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-muted/50 hover:bg-accent hover:text-accent-foreground flex items-center gap-x-2 rounded-full border border-border px-4 py-2 transition-colors"
+                    className="group flex flex-col items-center gap-3 transition-transform hover:scale-110"
                   >
-                    <link.icon className="size-4" />
-                    <span className="font-mono text-sm font-medium tracking-wide">
+                    <div className="bg-card border-2 border-border hover:border-primary flex items-center justify-center rounded-2xl p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
+                      <link.icon className="size-10 text-muted-foreground group-hover:text-primary transition-colors duration-300" strokeWidth={1.5} />
+                    </div>
+                    <span className="font-medium text-sm text-muted-foreground group-hover:text-foreground transition-colors">
                       {link.label}
                     </span>
                   </a>

@@ -1,4 +1,4 @@
-import { Card } from "@/components/ui/card";
+import { AnimatedTabs } from "@/components/ui/animated-tabs";
 import { Award, Users, Handshake, Headset } from "lucide-react";
 
 const features = [
@@ -25,34 +25,39 @@ const features = [
 ];
 
 const Heritage = () => {
+  const tabs = features.map((feature) => {
+    const Icon = feature.icon;
+    return {
+      id: feature.title.toLowerCase().replace(/\s+/g, '-'),
+      label: feature.title,
+      content: (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full h-full">
+          <div className="flex items-center justify-center bg-muted/20 rounded-lg p-6 md:p-8">
+            <Icon className="w-24 h-24 md:w-32 md:h-32 text-primary" />
+          </div>
+          <div className="flex flex-col gap-y-3 md:gap-y-4 justify-center">
+            <h3 className="text-xl md:text-2xl font-bold mb-0 mt-0 !m-0">{feature.title}</h3>
+            <p className="text-sm md:text-base text-muted-foreground mt-0">
+              {feature.description}
+            </p>
+          </div>
+        </div>
+      ),
+    };
+  });
+
   return (
-    <section className="py-20 bg-secondary/5">
+    <section id="why-gm" className="py-20 bg-secondary/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Why G M Machinery Store</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 px-4">Why G M Machinery Store</h2>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             More than a supplier – your partner in precision manufacturing
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <Card
-                key={index}
-                className="p-6 text-center hover:shadow-xl transition-all duration-300 group"
-              >
-                <div className="inline-flex p-4 rounded-full steel-gradient mb-4">
-                  <Icon className="w-8 h-8 text-primary-foreground" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {feature.description}
-                </p>
-              </Card>
-            );
-          })}
+        <div className="flex justify-center">
+          <AnimatedTabs tabs={tabs} className="w-full" />
         </div>
       </div>
     </section>
