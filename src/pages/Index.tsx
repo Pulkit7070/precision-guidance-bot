@@ -22,11 +22,17 @@ const Index = () => {
         ctaText="Explore Our Tool Ranges"
         images={[heroImage, drillsImage, millingImage, tappingImage, reamersImage]}
       />
-      <ProductCategories />
-      <CaseStudy />
-      <Industries />
-      <Heritage />
-      <ContactCTA />
+      <div id="about">
+        <ProductCategories />
+        <CaseStudy />
+        <Heritage />
+      </div>
+      <div id="industries">
+        <Industries />
+      </div>
+      <div id="contact">
+        <ContactCTA />
+      </div>
     </main>
   );
 };

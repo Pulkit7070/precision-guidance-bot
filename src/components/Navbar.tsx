@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import logo from "@/assets/gm-logo.png";
 
 const transition = {
   type: "spring" as const,
@@ -119,31 +120,34 @@ export const HoveredLink = ({ children, to, ...rest }: any) => {
 export function Navbar() {
   const [active, setActive] = useState<string | null>(null);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
-    <div className="fixed top-8 inset-x-0 max-w-2xl mx-auto z-50">
-      <Menu setActive={setActive}>
-        <Link to="/">
-          <MenuItem setActive={setActive} active={active} item="Home" />
+    <div className="fixed top-8 inset-x-0 z-50 px-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <Link to="/" className="flex-shrink-0">
+          <img src={logo} alt="G M Machinery Store" className="h-12 w-12 object-contain" />
         </Link>
-        <MenuItem setActive={setActive} active={active} item="Products">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink to="/products/drills">Precision Drills</HoveredLink>
-            <HoveredLink to="/products/milling">Milling Tools</HoveredLink>
-            <HoveredLink to="/products/tapping">Tapping Solutions</HoveredLink>
-            <HoveredLink to="/products/reamers">Reamer Systems</HoveredLink>
+        <Menu setActive={setActive}>
+          <Link to="/">
+            <MenuItem setActive={setActive} active={active} item="Home" />
+          </Link>
+          <div onClick={() => scrollToSection('about')}>
+            <MenuItem setActive={setActive} active={active} item="About Us" />
           </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Industries">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink to="/industries/aerospace">Aerospace</HoveredLink>
-            <HoveredLink to="/industries/automotive">Automotive</HoveredLink>
-            <HoveredLink to="/industries/engineering">Heavy Engineering</HoveredLink>
+          <div onClick={() => scrollToSection('industries')}>
+            <MenuItem setActive={setActive} active={active} item="Industries" />
           </div>
-        </MenuItem>
-        <Link to="/contact">
-          <MenuItem setActive={setActive} active={active} item="Contact" />
-        </Link>
-      </Menu>
+          <div onClick={() => scrollToSection('contact')}>
+            <MenuItem setActive={setActive} active={active} item="Contact" />
+          </div>
+        </Menu>
+      </div>
     </div>
   );
 }

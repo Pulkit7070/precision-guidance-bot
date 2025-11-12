@@ -48,7 +48,7 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         hero: {
-          dark: "hsl(var(--hero-dark))",
+          light: "hsl(var(--hero-light))",
         },
         steel: {
           gradient: {
