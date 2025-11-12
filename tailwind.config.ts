@@ -50,13 +50,10 @@ export default {
         hero: {
           light: "hsl(var(--hero-light))",
         },
-        steel: {
-          gradient: {
-            start: "hsl(var(--steel-gradient-start))",
-            end: "hsl(var(--steel-gradient-end))",
-          },
-          shine: "hsl(var(--metallic-shine))",
-        },
+        taupe: "hsl(var(--taupe))",
+        "soft-brown": "hsl(var(--soft-brown))",
+        "gentle-green": "hsl(var(--gentle-green))",
+        "muted-yellow": "hsl(var(--muted-yellow))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

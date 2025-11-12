@@ -64,40 +64,40 @@ export function HeroSection() {
             </div>
             <div className="relative py-6 md:w-[calc(100%-11rem)]">
               <InfiniteSlider
-                speedOnHover={20}
-                speed={40}
-                gap={80}
+                speedOnHover={60}
+                speed={100}
+                gap={48}
               >
-                <div className="flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg px-8 py-4 shadow-md hover:shadow-lg transition-shadow">
-                  <span className="text-white font-semibold text-sm">AEROSPACE CO.</span>
+                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
+                  <span className="text-muted-foreground font-medium text-sm">AEROSPACE CO.</span>
                 </div>
 
-                <div className="flex items-center justify-center bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg px-8 py-4 shadow-md hover:shadow-lg transition-shadow">
-                  <span className="text-white font-semibold text-sm">AUTO PARTS</span>
+                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
+                  <span className="text-muted-foreground font-medium text-sm">AUTO PARTS</span>
                 </div>
 
-                <div className="flex items-center justify-center bg-gradient-to-br from-green-500 to-green-600 rounded-lg px-8 py-4 shadow-md hover:shadow-lg transition-shadow">
-                  <span className="text-white font-semibold text-sm">PRECISION MFG</span>
+                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
+                  <span className="text-muted-foreground font-medium text-sm">PRECISION MFG</span>
                 </div>
 
-                <div className="flex items-center justify-center bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg px-8 py-4 shadow-md hover:shadow-lg transition-shadow">
-                  <span className="text-white font-semibold text-sm">HEAVY INDUSTRY</span>
+                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
+                  <span className="text-muted-foreground font-medium text-sm">HEAVY INDUSTRY</span>
                 </div>
 
-                <div className="flex items-center justify-center bg-gradient-to-br from-red-500 to-red-600 rounded-lg px-8 py-4 shadow-md hover:shadow-lg transition-shadow">
-                  <span className="text-white font-semibold text-sm">TECH PARTS</span>
+                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
+                  <span className="text-muted-foreground font-medium text-sm">TECH PARTS</span>
                 </div>
 
-                <div className="flex items-center justify-center bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-lg px-8 py-4 shadow-md hover:shadow-lg transition-shadow">
-                  <span className="text-white font-semibold text-sm">DEFENSE</span>
+                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
+                  <span className="text-muted-foreground font-medium text-sm">DEFENSE</span>
                 </div>
 
-                <div className="flex items-center justify-center bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-lg px-8 py-4 shadow-md hover:shadow-lg transition-shadow">
-                  <span className="text-white font-semibold text-sm">MEDICAL DEVICE</span>
+                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
+                  <span className="text-muted-foreground font-medium text-sm">MEDICAL DEVICE</span>
                 </div>
 
-                <div className="flex items-center justify-center bg-gradient-to-br from-pink-500 to-pink-600 rounded-lg px-8 py-4 shadow-md hover:shadow-lg transition-shadow">
-                  <span className="text-white font-semibold text-sm">MARINE</span>
+                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
+                  <span className="text-muted-foreground font-medium text-sm">MARINE</span>
                 </div>
               </InfiniteSlider>
 
