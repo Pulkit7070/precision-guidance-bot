@@ -18,7 +18,7 @@ const ContactCTA = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative overflow-hidden rounded-lg shadow-lg" style={{ paddingBottom: '75%', height: 0 }}>
               <iframe
-                src="https://www.google.com/maps?q=Industrial+Area,+Andheri+East,+Mumbai,+Maharashtra,+India&output=embed"
+                src="https://www.google.com/maps?q=28.6488314,77.2263614&output=embed"
                 style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
                 loading="lazy"
                 title="G M Machinery Store Location"
