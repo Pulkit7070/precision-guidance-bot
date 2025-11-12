@@ -137,7 +137,7 @@ export function Navbar() {
           <Link to="/">
             <MenuItem setActive={setActive} active={active} item="Home" />
           </Link>
-          <div onClick={() => scrollToSection('about')}>
+          <div onClick={() => scrollToSection('why-gm')}>
             <MenuItem setActive={setActive} active={active} item="About Us" />
           </div>
           <div onClick={() => scrollToSection('industries')}>
