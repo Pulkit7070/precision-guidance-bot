@@ -71,61 +71,45 @@ export function HeroSection() {
                 opts={{ loop: true }}
                 plugins={[AutoScroll({ playOnInit: true, speed: 0.5 })]}
               >
-                <CarouselContent className="ml-0">
-                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
-                    <div className="mx-4 flex shrink-0 items-center justify-center">
-                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
-                        <span className="text-muted-foreground font-medium text-sm">AEROSPACE CO.</span>
-                      </div>
+                <CarouselContent className="ml-0 -ml-4">
+                  <CarouselItem className="flex basis-1/3 justify-center pl-4 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-32 h-20 sm:w-36 sm:h-24">
+                      <div className="text-muted-foreground/30 text-xs">Logo 1</div>
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
-                    <div className="mx-4 flex shrink-0 items-center justify-center">
-                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
-                        <span className="text-muted-foreground font-medium text-sm">AUTO PARTS</span>
-                      </div>
+                  <CarouselItem className="flex basis-1/3 justify-center pl-4 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-32 h-20 sm:w-36 sm:h-24">
+                      <div className="text-muted-foreground/30 text-xs">Logo 2</div>
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
-                    <div className="mx-4 flex shrink-0 items-center justify-center">
-                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
-                        <span className="text-muted-foreground font-medium text-sm">PRECISION MFG</span>
-                      </div>
+                  <CarouselItem className="flex basis-1/3 justify-center pl-4 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-32 h-20 sm:w-36 sm:h-24">
+                      <div className="text-muted-foreground/30 text-xs">Logo 3</div>
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
-                    <div className="mx-4 flex shrink-0 items-center justify-center">
-                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
-                        <span className="text-muted-foreground font-medium text-sm">HEAVY INDUSTRY</span>
-                      </div>
+                  <CarouselItem className="flex basis-1/3 justify-center pl-4 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-32 h-20 sm:w-36 sm:h-24">
+                      <div className="text-muted-foreground/30 text-xs">Logo 4</div>
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
-                    <div className="mx-4 flex shrink-0 items-center justify-center">
-                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
-                        <span className="text-muted-foreground font-medium text-sm">TECH PARTS</span>
-                      </div>
+                  <CarouselItem className="flex basis-1/3 justify-center pl-4 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-32 h-20 sm:w-36 sm:h-24">
+                      <div className="text-muted-foreground/30 text-xs">Logo 5</div>
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
-                    <div className="mx-4 flex shrink-0 items-center justify-center">
-                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
-                        <span className="text-muted-foreground font-medium text-sm">DEFENSE</span>
-                      </div>
+                  <CarouselItem className="flex basis-1/3 justify-center pl-4 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-32 h-20 sm:w-36 sm:h-24">
+                      <div className="text-muted-foreground/30 text-xs">Logo 6</div>
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
-                    <div className="mx-4 flex shrink-0 items-center justify-center">
-                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
-                        <span className="text-muted-foreground font-medium text-sm">MEDICAL DEVICE</span>
-                      </div>
+                  <CarouselItem className="flex basis-1/3 justify-center pl-4 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-32 h-20 sm:w-36 sm:h-24">
+                      <div className="text-muted-foreground/30 text-xs">Logo 7</div>
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
-                    <div className="mx-4 flex shrink-0 items-center justify-center">
-                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
-                        <span className="text-muted-foreground font-medium text-sm">MARINE</span>
-                      </div>
+                  <CarouselItem className="flex basis-1/3 justify-center pl-4 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-32 h-20 sm:w-36 sm:h-24">
+                      <div className="text-muted-foreground/30 text-xs">Logo 8</div>
                     </div>
                   </CarouselItem>
                 </CarouselContent>
