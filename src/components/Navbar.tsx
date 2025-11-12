@@ -128,7 +128,7 @@ export function Navbar() {
   };
 
   return (
-    <div className="fixed top-8 inset-x-0 z-50 px-4">
+    <div className="top-8 inset-x-0 z-50 px-4 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex-shrink-0">
           <img src={logo} alt="G M Machinery Store" className="h-12 w-12 object-contain" />
