@@ -66,7 +66,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)}
-      className="relative rounded-full border border-border/50 bg-card/80 backdrop-blur-md shadow-lg flex justify-center space-x-4 px-8 py-6"
+      className="relative rounded-full border border-border/50 bg-card/80 backdrop-blur-md shadow-lg flex justify-center space-x-2 sm:space-x-4 px-4 sm:px-8 py-4 sm:py-6 text-sm sm:text-base"
     >
       {children}
     </nav>
@@ -128,19 +128,19 @@ export function Navbar() {
   };
 
   return (
-    <div className="top-8 inset-x-0 z-50 px-4 py-4">
+    <div className="top-4 md:top-8 inset-x-0 z-50 px-4 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex-shrink-0">
-          <img src={logo} alt="G M Machinery Store" className="h-12 w-12 object-contain" />
+          <img src={logo} alt="G M Machinery Store" className="h-10 w-10 sm:h-12 sm:w-12 object-contain" />
         </Link>
         <Menu setActive={setActive}>
-          <Link to="/">
+          <Link to="/" className="hidden sm:block">
             <MenuItem setActive={setActive} active={active} item="Home" />
           </Link>
           <div onClick={() => scrollToSection('why-gm')}>
             <MenuItem setActive={setActive} active={active} item="About Us" />
           </div>
-          <div onClick={() => scrollToSection('industries')}>
+          <div onClick={() => scrollToSection('industries')} className="hidden sm:block">
             <MenuItem setActive={setActive} active={active} item="Industries" />
           </div>
           <div onClick={() => scrollToSection('contact')}>

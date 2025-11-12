@@ -31,13 +31,13 @@ const Heritage = () => {
       id: feature.title.toLowerCase().replace(/\s+/g, '-'),
       label: feature.title,
       content: (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full h-full">
-          <div className="flex items-center justify-center bg-muted/20 rounded-lg p-8">
-            <Icon className="w-32 h-32 text-primary" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full h-full">
+          <div className="flex items-center justify-center bg-muted/20 rounded-lg p-6 md:p-8">
+            <Icon className="w-24 h-24 md:w-32 md:h-32 text-primary" />
           </div>
-          <div className="flex flex-col gap-y-4 justify-center">
-            <h3 className="text-2xl font-bold mb-0 mt-0 !m-0">{feature.title}</h3>
-            <p className="text-base text-muted-foreground mt-0">
+          <div className="flex flex-col gap-y-3 md:gap-y-4 justify-center">
+            <h3 className="text-xl md:text-2xl font-bold mb-0 mt-0 !m-0">{feature.title}</h3>
+            <p className="text-sm md:text-base text-muted-foreground mt-0">
               {feature.description}
             </p>
           </div>
@@ -50,8 +50,8 @@ const Heritage = () => {
     <section id="why-gm" className="py-20 bg-secondary/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Why G M Machinery Store</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 px-4">Why G M Machinery Store</h2>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             More than a supplier – your partner in precision manufacturing
           </p>
         </div>

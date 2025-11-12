@@ -87,13 +87,13 @@ const AnimatedTabs = ({
 
   return (
     <div className={cn("w-full max-w-4xl flex flex-col gap-y-1", className)}>
-      <div className="flex gap-2 flex-wrap bg-muted/30 backdrop-blur-sm p-1 rounded-xl">
+      <div className="flex gap-2 flex-wrap bg-muted/30 backdrop-blur-sm p-1 rounded-xl justify-center">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
             className={cn(
-              "relative px-3 py-1.5 text-sm font-medium rounded-lg outline-none transition-colors"
+              "relative px-3 py-1.5 text-xs sm:text-sm font-medium rounded-lg outline-none transition-colors"
             )}
           >
             {activeTab === tab.id && (
@@ -108,7 +108,7 @@ const AnimatedTabs = ({
         ))}
       </div>
 
-      <div className="p-6 bg-card natural-shadow backdrop-blur-sm rounded-xl border min-h-60 h-full">
+      <div className="p-4 sm:p-6 bg-card natural-shadow backdrop-blur-sm rounded-xl border min-h-60 h-full">
         {tabs.map(
           (tab) =>
             activeTab === tab.id && (
