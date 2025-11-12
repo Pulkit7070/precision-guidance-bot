@@ -1,6 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { InfiniteSlider } from "@/components/ui/infinite-slider";
-import { ProgressiveBlur } from "@/components/ui/progressive-blur";
+import AutoScroll from "embla-carousel-auto-scroll";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 import heroImage from "@/assets/hero-machinery.jpg";
 
 export function HeroSection() {
@@ -63,46 +67,71 @@ export function HeroSection() {
               <p className="text-center md:text-end text-sm font-medium text-foreground">Powering the best teams</p>
             </div>
             <div className="relative py-6 md:w-[calc(100%-11rem)]">
-              <InfiniteSlider
-                speedOnHover={18}
-                speed={30}
-                gap={48}
+              <Carousel
+                opts={{ loop: true }}
+                plugins={[AutoScroll({ playOnInit: true, speed: 0.5 })]}
               >
-                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
-                  <span className="text-muted-foreground font-medium text-sm">AEROSPACE CO.</span>
-                </div>
-
-                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
-                  <span className="text-muted-foreground font-medium text-sm">AUTO PARTS</span>
-                </div>
-
-                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
-                  <span className="text-muted-foreground font-medium text-sm">PRECISION MFG</span>
-                </div>
-
-                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
-                  <span className="text-muted-foreground font-medium text-sm">HEAVY INDUSTRY</span>
-                </div>
-
-                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
-                  <span className="text-muted-foreground font-medium text-sm">TECH PARTS</span>
-                </div>
-
-                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
-                  <span className="text-muted-foreground font-medium text-sm">DEFENSE</span>
-                </div>
-
-                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
-                  <span className="text-muted-foreground font-medium text-sm">MEDICAL DEVICE</span>
-                </div>
-
-                <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 shadow-sm hover:shadow-md transition-all min-w-[160px]">
-                  <span className="text-muted-foreground font-medium text-sm">MARINE</span>
-                </div>
-              </InfiniteSlider>
-
-              <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-background/50 to-transparent pointer-events-none"></div>
-              <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-background/50 to-transparent pointer-events-none"></div>
+                <CarouselContent className="ml-0">
+                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="mx-4 flex shrink-0 items-center justify-center">
+                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
+                        <span className="text-muted-foreground font-medium text-sm">AEROSPACE CO.</span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="mx-4 flex shrink-0 items-center justify-center">
+                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
+                        <span className="text-muted-foreground font-medium text-sm">AUTO PARTS</span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="mx-4 flex shrink-0 items-center justify-center">
+                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
+                        <span className="text-muted-foreground font-medium text-sm">PRECISION MFG</span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="mx-4 flex shrink-0 items-center justify-center">
+                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
+                        <span className="text-muted-foreground font-medium text-sm">HEAVY INDUSTRY</span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="mx-4 flex shrink-0 items-center justify-center">
+                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
+                        <span className="text-muted-foreground font-medium text-sm">TECH PARTS</span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="mx-4 flex shrink-0 items-center justify-center">
+                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
+                        <span className="text-muted-foreground font-medium text-sm">DEFENSE</span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="mx-4 flex shrink-0 items-center justify-center">
+                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
+                        <span className="text-muted-foreground font-medium text-sm">MEDICAL DEVICE</span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-0 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="mx-4 flex shrink-0 items-center justify-center">
+                      <div className="flex items-center justify-center bg-card border-2 border-border rounded-lg px-12 py-8 natural-shadow hover:shadow-md transition-all min-w-[160px]">
+                        <span className="text-muted-foreground font-medium text-sm">MARINE</span>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                </CarouselContent>
+              </Carousel>
+              <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-background to-transparent pointer-events-none"></div>
+              <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-background to-transparent pointer-events-none"></div>
             </div>
           </div>
         </div>

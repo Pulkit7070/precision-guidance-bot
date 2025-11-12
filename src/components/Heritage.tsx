@@ -1,4 +1,4 @@
-import { Card } from "@/components/ui/card";
+import { AnimatedTabs } from "@/components/ui/animated-tabs";
 import { Award, Users, Handshake, Headset } from "lucide-react";
 
 const features = [
@@ -25,6 +25,27 @@ const features = [
 ];
 
 const Heritage = () => {
+  const tabs = features.map((feature) => {
+    const Icon = feature.icon;
+    return {
+      id: feature.title.toLowerCase().replace(/\s+/g, '-'),
+      label: feature.title,
+      content: (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full h-full">
+          <div className="flex items-center justify-center bg-muted/20 rounded-lg p-8">
+            <Icon className="w-32 h-32 text-primary" />
+          </div>
+          <div className="flex flex-col gap-y-4 justify-center">
+            <h3 className="text-2xl font-bold mb-0 mt-0 !m-0">{feature.title}</h3>
+            <p className="text-base text-muted-foreground mt-0">
+              {feature.description}
+            </p>
+          </div>
+        </div>
+      ),
+    };
+  });
+
   return (
     <section className="py-20 bg-secondary/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -35,24 +56,8 @@ const Heritage = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <Card
-                key={index}
-                className="p-6 text-center hover:shadow-xl transition-all duration-300 group"
-              >
-                <div className="inline-flex p-4 rounded-full steel-gradient mb-4">
-                  <Icon className="w-8 h-8 text-primary-foreground" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {feature.description}
-                </p>
-              </Card>
-            );
-          })}
+        <div className="flex justify-center">
+          <AnimatedTabs tabs={tabs} className="w-full" />
         </div>
       </div>
     </section>
