@@ -18,7 +18,7 @@ const Index = () => {
       <AnimatedMarqueeHero
         tagline="Serving manufacturers since 1970"
         title="Precision Metal Cutting Tools for Modern Manufacturing"
-        description="Five decades of expertise in carbide drills, milling cutters, and precision tooling. Trusted by 300+ machine shops across aerospace, automotive, and heavy engineering sectors."
+        description=""
         ctaText="Explore Our Tool Ranges"
         images={[heroImage, drillsImage, millingImage, tappingImage, reamersImage]}
       />
