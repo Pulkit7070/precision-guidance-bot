@@ -14,7 +14,7 @@ export function HeroSection() {
         <div className="py-12 md:py-16 lg:py-20 xl:py-24 w-full">
           <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 sm:px-6 lg:flex-row lg:justify-between">
             <div className="mx-auto max-w-lg text-center lg:mx-0 lg:w-1/2 lg:text-left z-10">
-              <h1 className="text-balance text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium">
+              <h1 className="text-balance text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal" style={{ fontFamily: 'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif', fontWeight: 400 }}>
                 Precision Metal Cutting Tools for Modern Manufacturing
               </h1>
 
