@@ -24,11 +24,12 @@ const ContactCTA = () => {
             <div className="relative overflow-hidden rounded-lg shadow-2xl group scroll-reveal" style={{ paddingBottom: '75%', height: 0, minHeight: '250px' }}>
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-25 group-hover:opacity-40 transition duration-500 pointer-events-none"></div>
               <iframe
-                src="https://www.google.com/maps?q=28.6488314,77.2263614&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.5896234567!2d77.2263614!3d28.6488314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM4JzU1LjgiTiA3N8KwMTMnMzQuOSJF!5e0!3m2!1sen!2sin!4v1234567890"
                 style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
                 loading="lazy"
                 title="G M Machinery Store Location"
                 className="relative z-10"
+                allowFullScreen
               />
             </div>
 
