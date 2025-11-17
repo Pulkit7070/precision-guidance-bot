@@ -26,7 +26,7 @@ export const MenuItem = ({
     <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-foreground hover:text-primary"
+        className="cursor-pointer text-foreground hover:text-primary touch-manipulation px-1 py-1 whitespace-nowrap"
       >
         {item}
       </motion.p>
@@ -65,7 +65,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)}
-      className="relative rounded-full border border-border/50 bg-card/80 backdrop-blur-md shadow-lg flex justify-center space-x-2 sm:space-x-4 px-4 sm:px-8 py-4 sm:py-6 text-sm sm:text-base"
+      className="relative rounded-full border border-border/50 bg-card/90 backdrop-blur-md shadow-lg flex justify-center space-x-2 sm:space-x-3 md:space-x-4 px-3 sm:px-4 md:px-8 py-3 sm:py-4 md:py-6 text-xs sm:text-sm md:text-base"
     >
       {children}
     </nav>
@@ -137,10 +137,10 @@ export function Navbar() {
   };
 
   return (
-    <div className={`fixed top-4 md:top-8 inset-x-0 z-50 px-4 py-4 transition-all duration-300 ${scrolled ? 'top-0 md:top-0 py-2 bg-background/80 backdrop-blur-lg shadow-lg' : ''}`}>
-      <div className="max-w-7xl mx-auto flex items-center justify-between animate-fade-in-up">
-        <div onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex-shrink-0 cursor-pointer">
-          <span className="text-xl sm:text-2xl font-bold text-foreground hover:text-primary transition-colors duration-300">GM Machinery</span>
+    <div className={`fixed top-0 inset-x-0 z-50 px-3 sm:px-4 py-3 sm:py-4 transition-all duration-300 ${scrolled ? 'bg-background/95 backdrop-blur-xl shadow-lg' : 'bg-background/60 backdrop-blur-sm'}`}>
+      <div className="max-w-7xl mx-auto flex items-center justify-between gap-3 animate-fade-in-up">
+        <div onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex-shrink-0 cursor-pointer touch-manipulation">
+          <span className="text-lg sm:text-xl md:text-2xl font-bold text-foreground hover:text-primary transition-colors duration-300">GM Machinery</span>
         </div>
         <Menu setActive={setActive}>
           <div onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hidden sm:block cursor-pointer">

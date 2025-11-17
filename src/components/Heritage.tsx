@@ -16,17 +16,17 @@ const Heritage = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <div className="mb-12 sm:mb-16 scroll-reveal">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 animate-fade-in-up">About Us</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent animate-scale-in"></div>
+          <div className="mb-10 sm:mb-12 md:mb-16 scroll-reveal">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 animate-fade-in-up">About Us</h2>
+            <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-primary to-accent animate-scale-in"></div>
           </div>
 
           {/* Main Content Grid */}
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16 sm:mb-20 lg:items-stretch">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-12 sm:mb-16 md:mb-20 lg:items-stretch">
             {/* Left Column - Main Description */}
-            <div className="flex flex-col justify-center space-y-6 scroll-reveal" style={{ animationDelay: '0.1s' }}>
+            <div className="flex flex-col justify-center space-y-4 sm:space-y-6 scroll-reveal" style={{ animationDelay: '0.1s' }}>
               <div className="prose prose-lg max-w-none">
-                <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-foreground/90">
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-foreground/90">
                   <span className="font-semibold text-foreground">G M Machinery Store</span> is a family run business, having an experience of <span className="font-semibold text-foreground">over 50 years</span> of trading of metal cutting tools, throughout the country.
                 </p>
                 <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-foreground/90">
@@ -44,21 +44,21 @@ const Heritage = () => {
               <div className="relative bg-secondary/10 rounded-lg p-6 sm:p-8 lg:p-10 border-l-4 border-primary flex flex-col justify-center backdrop-blur-sm">
                 <div className="space-y-8">
                   <div className="transform hover:scale-105 transition-transform duration-300">
-                    <h3 className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2 animate-counter">50+</h3>
-                    <p className="text-lg sm:text-xl font-semibold text-foreground">Years of Experience</p>
-                    <p className="text-sm sm:text-base text-muted-foreground mt-1">Trusted expertise in metal cutting tools</p>
+                    <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2 animate-counter">50+</h3>
+                    <p className="text-base sm:text-lg md:text-xl font-semibold text-foreground">Years of Experience</p>
+                    <p className="text-xs sm:text-sm md:text-base text-muted-foreground mt-1">Trusted expertise in metal cutting tools</p>
                   </div>
                   <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
                   <div className="transform hover:scale-105 transition-transform duration-300">
-                    <h3 className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2 animate-counter" style={{ animationDelay: '0.2s' }}>5</h3>
-                    <p className="text-lg sm:text-xl font-semibold text-foreground">Group Companies</p>
-                    <p className="text-sm sm:text-base text-muted-foreground mt-1">Comprehensive manufacturing & trading network</p>
+                    <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2 animate-counter" style={{ animationDelay: '0.2s' }}>5</h3>
+                    <p className="text-base sm:text-lg md:text-xl font-semibold text-foreground">Group Companies</p>
+                    <p className="text-xs sm:text-sm md:text-base text-muted-foreground mt-1">Comprehensive manufacturing & trading network</p>
                   </div>
                   <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
                   <div className="transform hover:scale-105 transition-transform duration-300">
-                    <h3 className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2 animate-counter" style={{ animationDelay: '0.4s' }}>100%</h3>
-                    <p className="text-lg sm:text-xl font-semibold text-foreground">Family Owned</p>
-                    <p className="text-sm sm:text-base text-muted-foreground mt-1">Personal service across generations</p>
+                    <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2 animate-counter" style={{ animationDelay: '0.4s' }}>100%</h3>
+                    <p className="text-base sm:text-lg md:text-xl font-semibold text-foreground">Family Owned</p>
+                    <p className="text-xs sm:text-sm md:text-base text-muted-foreground mt-1">Personal service across generations</p>
                   </div>
                 </div>
               </div>
@@ -66,26 +66,26 @@ const Heritage = () => {
           </div>
 
           {/* Group of Companies Section */}
-          <div className="border-t border-border pt-12 sm:pt-16">
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 sm:mb-10 scroll-reveal">Our Group of Companies</h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div className="border-t border-border pt-10 sm:pt-12 md:pt-16">
+            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 md:mb-10 scroll-reveal">Our Group of Companies</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
               {companies.map((company, index) => (
                 <div
                   key={index}
-                  className="group relative bg-card rounded-lg p-6 sm:p-7 border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2 scroll-reveal"
+                  className="group relative bg-card rounded-lg p-4 sm:p-5 md:p-6 lg:p-7 border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2 scroll-reveal touch-manipulation"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-2">
-                        <div className="w-2 h-2 rounded-full bg-primary"></div>
-                        <h4 className="font-semibold text-base sm:text-lg text-foreground group-hover:text-primary transition-colors">
+                      <div className="flex items-center gap-2 sm:gap-3 mb-2">
+                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-primary flex-shrink-0"></div>
+                        <h4 className="font-semibold text-sm sm:text-base md:text-lg text-foreground group-hover:text-primary transition-colors leading-snug">
                           {company.name}
                         </h4>
                       </div>
                       {company.subtitle && (
-                        <p className="text-sm text-muted-foreground ml-5 mt-1 font-medium">
+                        <p className="text-xs sm:text-sm text-muted-foreground ml-4 sm:ml-5 mt-1 font-medium">
                           {company.subtitle}
                         </p>
                       )}

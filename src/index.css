@@ -299,4 +299,74 @@ All colors MUST be HSL.
   img:not([loading="lazy"]) {
     opacity: 1;
   }
+
+  /* Mobile-specific optimizations */
+  @media (max-width: 640px) {
+    /* Prevent horizontal scroll */
+    body {
+      overflow-x: hidden;
+    }
+
+    /* Better touch targets */
+    .touch-manipulation {
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Reduce motion for mobile */
+    .animate-float {
+      animation: none;
+    }
+
+    /* Optimize text for mobile screens */
+    h1, h2, h3 {
+      word-wrap: break-word;
+      hyphens: auto;
+    }
+
+    /* Improve button spacing */
+    button {
+      min-height: 44px;
+      min-width: 44px;
+    }
+
+    /* Better mobile shadows */
+    .shadow-2xl {
+      box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.15);
+    }
+  }
+
+  /* Prevent zoom on input focus (iOS) */
+  @media (max-width: 640px) {
+    input, select, textarea {
+      font-size: 16px !important;
+    }
+  }
+
+  /* Smooth scrolling with offset for fixed header */
+  @media (max-width: 768px) {
+    html {
+      scroll-padding-top: 80px;
+    }
+  }
+
+  /* Better tap highlighting */
+  a, button, [role="button"] {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /* Improve performance on mobile */
+  @media (max-width: 640px) {
+    .blur-3xl {
+      filter: blur(40px);
+    }
+    
+    .backdrop-blur-md {
+      backdrop-filter: blur(8px);
+    }
+
+    .backdrop-blur-xl {
+      backdrop-filter: blur(12px);
+    }
+  }
 }

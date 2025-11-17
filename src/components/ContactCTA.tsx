@@ -12,16 +12,16 @@ const ContactCTA = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground px-4 animate-fade-in-up">Talk to Our Tooling Experts</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-4 animate-scale-in"></div>
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+          <div className="text-center mb-10 sm:mb-12 scroll-reveal">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-foreground px-4 animate-fade-in-up">Talk to Our Tooling Experts</h2>
+            <div className="w-20 sm:w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-3 sm:mb-4 animate-scale-in"></div>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
               Get personalized recommendations for your machining applications
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="relative overflow-hidden rounded-lg shadow-2xl group scroll-reveal" style={{ paddingBottom: '75%', height: 0 }}>
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+            <div className="relative overflow-hidden rounded-lg shadow-2xl group scroll-reveal" style={{ paddingBottom: '75%', height: 0, minHeight: '250px' }}>
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
               <iframe
                 src="https://www.google.com/maps?q=28.6488314,77.2263614&output=embed"
@@ -31,47 +31,47 @@ const ContactCTA = () => {
               />
             </div>
 
-            <div className="space-y-6 scroll-reveal" style={{ animationDelay: '0.1s' }}>
+            <div className="space-y-5 sm:space-y-6 scroll-reveal" style={{ animationDelay: '0.1s' }}>
               <div>
-                <h3 className="text-2xl font-semibold mb-6 text-foreground animate-fade-in-up">Contact Information</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4 group hover:translate-x-2 transition-transform duration-300">
-                    <div className="p-3 rounded-lg bg-primary/10 flex-shrink-0 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
-                      <Phone className="w-5 h-5 text-primary" />
+                <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-foreground animate-fade-in-up">Contact Information</h3>
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="flex items-start gap-3 sm:gap-4 group hover:translate-x-1 sm:hover:translate-x-2 transition-transform duration-300 touch-manipulation">
+                    <div className="p-2.5 sm:p-3 rounded-lg bg-primary/10 flex-shrink-0 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                      <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                     </div>
-                    <div className="flex-1">
-                      <div className="font-semibold mb-2 text-foreground">Phone</div>
-                      <div className="space-y-1.5">
-                        <a href="tel:+919899804420" className="block text-muted-foreground hover:text-primary transition-colors">
+                    <div className="flex-1 min-w-0">
+                      <div className="font-semibold mb-1.5 sm:mb-2 text-foreground text-sm sm:text-base">Phone</div>
+                      <div className="space-y-1 sm:space-y-1.5">
+                        <a href="tel:+919899804420" className="block text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base touch-manipulation">
                           +91 98998 04420
                         </a>
-                        <a href="tel:+919811065121" className="block text-muted-foreground hover:text-primary transition-colors">
+                        <a href="tel:+919811065121" className="block text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base touch-manipulation">
                           +91 98110 65121
                         </a>
-                        <a href="tel:01146065101" className="block text-muted-foreground hover:text-primary transition-colors">
+                        <a href="tel:01146065101" className="block text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base touch-manipulation">
                              <span className="text-secondary"> +</span>011-46065101
                         </a>
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-lg bg-primary/10">
-                      <Mail className="w-5 h-5 text-primary" />
+                  <div className="flex items-start gap-3 sm:gap-4 group hover:translate-x-1 sm:hover:translate-x-2 transition-transform duration-300 touch-manipulation">
+                    <div className="p-2.5 sm:p-3 rounded-lg bg-primary/10 flex-shrink-0 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                      <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                     </div>
-                    <div>
-                      <div className="font-semibold mb-1 text-foreground">Email</div>
-                      <div className="text-muted-foreground">21shivamgupta@gmail.com</div>
+                    <div className="min-w-0">
+                      <div className="font-semibold mb-1 text-foreground text-sm sm:text-base">Email</div>
+                      <a href="mailto:21shivamgupta@gmail.com" className="text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base break-all touch-manipulation">21shivamgupta@gmail.com</a>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-lg bg-primary/10">
-                      <MapPin className="w-5 h-5 text-primary" />
+                  <div className="flex items-start gap-3 sm:gap-4 group hover:translate-x-1 sm:hover:translate-x-2 transition-transform duration-300 touch-manipulation">
+                    <div className="p-2.5 sm:p-3 rounded-lg bg-primary/10 flex-shrink-0 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                      <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                     </div>
-                    <div>
-                      <div className="font-semibold mb-1 text-foreground">Location</div>
-                      <div className="text-muted-foreground">
+                    <div className="min-w-0">
+                      <div className="font-semibold mb-1 text-foreground text-sm sm:text-base">Location</div>
+                      <div className="text-muted-foreground text-sm sm:text-base leading-relaxed">
                         346, Katra Sheikh Ranjha, Hauz Qazi, Near Chawri Bazar Metro Station, Delhi - 110006
                       </div>
                     </div>
@@ -79,11 +79,11 @@ const ContactCTA = () => {
                 </div>
               </div>
 
-              <Card className="p-6 bg-card border-border shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative group">
+              <Card className="p-4 sm:p-5 md:p-6 bg-card border-border shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative group touch-manipulation">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-500"></div>
                 <div className="relative">
-                  <h4 className="font-semibold text-lg mb-2 text-foreground">Business Hours</h4>
-                  <div className="space-y-1 text-sm text-muted-foreground">
+                  <h4 className="font-semibold text-base sm:text-lg mb-2 text-foreground">Business Hours</h4>
+                  <div className="space-y-0.5 sm:space-y-1 text-xs sm:text-sm text-muted-foreground">
                     <div>Monday - Saturday: 9:00 AM - 7:00 PM</div>
                     <div>Sunday: Closed</div>
                   </div>
