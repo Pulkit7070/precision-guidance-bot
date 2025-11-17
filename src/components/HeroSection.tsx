@@ -82,11 +82,11 @@ export function HeroSection() {
       <section className="bg-muted/30 py-12 md:py-16 lg:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent"></div>
         <div className="group relative m-auto max-w-7xl px-4 sm:px-6" id="industries">
-          <div className="flex flex-col items-center md:flex-row gap-8 md:gap-12 scroll-reveal">
+          <div className="flex flex-col items-center md:flex-row gap-3 sm:gap-6 md:gap-12 scroll-reveal">
             <div className="md:max-w-60 md:border-r md:border-border md:pr-8">
               <p className="text-center md:text-end text-lg sm:text-xl font-medium text-foreground animate-fade-in">Our Partner Companies</p>
             </div>
-            <div className="relative py-6 md:w-[calc(100%-17rem)]">
+            <div className="relative py-3 sm:py-4 md:py-6 md:w-[calc(100%-17rem)]">
               <Carousel
                 opts={{ loop: true, align: "start" }}
                 plugins={[AutoScroll({ playOnInit: true, speed: 1, stopOnInteraction: false })]}
