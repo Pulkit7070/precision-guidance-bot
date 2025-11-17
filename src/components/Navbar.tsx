@@ -139,20 +139,20 @@ export function Navbar() {
   return (
     <div className={`fixed top-4 md:top-8 inset-x-0 z-50 px-4 py-4 transition-all duration-300 ${scrolled ? 'top-0 md:top-0 py-2 bg-background/80 backdrop-blur-lg shadow-lg' : ''}`}>
       <div className="max-w-7xl mx-auto flex items-center justify-between animate-fade-in-up">
-        <Link to="/" className="flex-shrink-0">
-          <span className="text-xl sm:text-2xl font-bold text-foreground">GM Machinery</span>
-        </Link>
+        <div onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex-shrink-0 cursor-pointer">
+          <span className="text-xl sm:text-2xl font-bold text-foreground hover:text-primary transition-colors duration-300">GM Machinery</span>
+        </div>
         <Menu setActive={setActive}>
-          <Link to="/" className="hidden sm:block">
+          <div onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="hidden sm:block cursor-pointer">
             <MenuItem setActive={setActive} active={active} item="Home" />
-          </Link>
-          <div onClick={() => scrollToSection('why-gm')}>
+          </div>
+          <div onClick={() => scrollToSection('about-us')} className="cursor-pointer">
             <MenuItem setActive={setActive} active={active} item="About Us" />
           </div>
-          <div onClick={() => scrollToSection('industries')} className="hidden sm:block">
+          <div onClick={() => scrollToSection('industries')} className="hidden sm:block cursor-pointer">
             <MenuItem setActive={setActive} active={active} item="Industries" />
           </div>
-          <div onClick={() => scrollToSection('contact')}>
+          <div onClick={() => scrollToSection('contact')} className="cursor-pointer">
             <MenuItem setActive={setActive} active={active} item="Contact" />
           </div>
         </Menu>

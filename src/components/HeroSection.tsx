@@ -52,8 +52,8 @@ export function HeroSection() {
                 </Button>
                 <Button
                   size="lg"
-                  variant="ghost"
-                  className="px-5 text-base w-full sm:w-auto transform hover:scale-105 transition-all duration-300 hover:bg-primary/10"
+                  variant="outline"
+                  className="px-5 text-base w-full sm:w-auto transform hover:scale-105 transition-all duration-300 hover:bg-accent hover:text-accent-foreground hover:border-accent hover:shadow-lg"
                   onClick={() => {
                     const element = document.getElementById('contact');
                     if (element) {
