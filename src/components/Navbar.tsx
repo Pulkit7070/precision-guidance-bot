@@ -118,6 +118,16 @@ export const HoveredLink = ({ children, to, ...rest }: any) => {
 
 export function Navbar() {
   const [active, setActive] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -127,8 +137,8 @@ export function Navbar() {
   };
 
   return (
-    <div className="top-4 md:top-8 inset-x-0 z-50 px-4 py-4">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <div className={`fixed top-4 md:top-8 inset-x-0 z-50 px-4 py-4 transition-all duration-300 ${scrolled ? 'top-0 md:top-0 py-2 bg-background/80 backdrop-blur-lg shadow-lg' : ''}`}>
+      <div className="max-w-7xl mx-auto flex items-center justify-between animate-fade-in-up">
         <Link to="/" className="flex-shrink-0">
           <span className="text-xl sm:text-2xl font-bold text-foreground">GM Machinery</span>
         </Link>

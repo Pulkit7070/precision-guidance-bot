@@ -99,11 +99,16 @@ const ProductCategories = () => {
   const [selectedImage, setSelectedImage] = useState<{ image: string; title: string } | null>(null);
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background relative overflow-hidden">
+      {/* Decorative gradient orbs */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl -z-10"></div>
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our Product Gallery</h2>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
+        <div className="text-center mb-12 scroll-reveal">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 animate-fade-in-up">Our Product Gallery</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-4 animate-scale-in"></div>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
             Explore our comprehensive range of precision cutting tools and machinery solutions.
           </p>
         </div>
@@ -112,15 +117,29 @@ const ProductCategories = () => {
           {categories.map((category, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+              className="group relative overflow-hidden rounded-lg cursor-pointer transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 scroll-reveal border border-transparent hover:border-primary/30 bg-card"
               onClick={() => setSelectedImage({ image: category.image, title: category.title })}
+              style={{ animationDelay: `${index * 0.05}s` }}
             >
               <div className="relative aspect-square overflow-hidden">
+                {/* Gradient overlay on hover */}
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                
+                {/* Glow effect */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-lg blur opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+                
                 <img
                   src={category.image}
                   alt={category.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="relative w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
                 />
+                
+                {/* Hover text indicator */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                  <div className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold text-foreground transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                    View Full Size
+                  </div>
+                </div>
               </div>
             </div>
           ))}
@@ -130,22 +149,25 @@ const ProductCategories = () => {
       {/* Image Popup Modal */}
       {selectedImage && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md p-4 animate-fade-in"
           onClick={() => setSelectedImage(null)}
         >
-          <div className="relative max-w-5xl max-h-[90vh] w-full" onClick={(e) => e.stopPropagation()}>
+          <div className="relative max-w-5xl max-h-[90vh] w-full animate-scale-in" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
+              className="absolute -top-12 right-0 text-white hover:text-primary hover:scale-110 transition-all duration-300 bg-white/10 hover:bg-white/20 rounded-full p-2 backdrop-blur-sm"
               aria-label="Close"
             >
               <X className="w-8 h-8" />
             </button>
-            <img
-              src={selectedImage.image}
-              alt={selectedImage.title}
-              className="w-full h-full object-contain rounded-lg"
-            />
+            <div className="relative group">
+              <div className="absolute -inset-2 bg-gradient-to-r from-primary to-accent rounded-lg blur-xl opacity-50 group-hover:opacity-75 transition duration-500"></div>
+              <img
+                src={selectedImage.image}
+                alt={selectedImage.title}
+                className="relative w-full h-full object-contain rounded-lg shadow-2xl"
+              />
+            </div>
           </div>
         </div>
       )}
