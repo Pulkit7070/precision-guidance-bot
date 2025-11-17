@@ -6,6 +6,18 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import heroImage from "@/assets/hero-machinery.jpg";
+import logoAddison from "@/assets/patners/Logo Addison.png";
+import logoHiTech from "@/assets/patners/Logo Hi-Tech.jpeg";
+import logoIT from "@/assets/patners/Logo IT.png";
+import logoKorloy from "@/assets/patners/Logo Korloy.jpg";
+import logoKyocera from "@/assets/patners/Logo Kyocera.png";
+import logoMiranda from "@/assets/patners/Logo Miranda.png";
+import logoSizeControl from "@/assets/patners/Logo Size Control.jpg";
+import logoTaegutec from "@/assets/patners/Logo Taegutec.png";
+import logoTotem from "@/assets/patners/Logo Totem.png";
+import logoVargus from "@/assets/patners/Logo Vargus.jpg.webp";
+import logoWidia from "@/assets/patners/Logo Widia.svg";
+import logoYG1 from "@/assets/patners/Logo YG-1.png";
 
 export function HeroSection() {
   return (
@@ -58,75 +70,75 @@ export function HeroSection() {
         </div>
       </section>
       <section className="bg-muted/30 py-12 md:py-16 lg:py-24">
-        <div className="group relative m-auto max-w-6xl px-4 sm:px-6" id="industries">
-          <div className="flex flex-col items-center md:flex-row gap-6 md:gap-8">
-            <div className="md:max-w-44 md:border-r md:border-border md:pr-6">
-              <p className="text-center md:text-end text-sm font-medium text-foreground">Powering the best teams</p>
+        <div className="group relative m-auto max-w-7xl px-4 sm:px-6" id="industries">
+          <div className="flex flex-col items-center md:flex-row gap-8 md:gap-12">
+            <div className="md:max-w-60 md:border-r md:border-border md:pr-8">
+              <p className="text-center md:text-end text-xl font-medium text-foreground">Our Patner Companies</p>
             </div>
-            <div className="relative py-6 md:w-[calc(100%-11rem)]">
+            <div className="relative py-6 md:w-[calc(100%-17rem)]">
               <Carousel
-                opts={{ loop: true }}
-                plugins={[AutoScroll({ playOnInit: true, speed: 0.5 })]}
+                opts={{ loop: true, align: "start" }}
+                plugins={[AutoScroll({ playOnInit: true, speed: 1, stopOnInteraction: false })]}
               >
-                <CarouselContent className="ml-0 -ml-4">
-                  <CarouselItem className="flex basis-1/2 justify-center pl-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-28 h-16 sm:w-32 sm:h-20">
-                      <div className="text-muted-foreground/30 text-xs">Logo 1</div>
+                <CarouselContent className="-ml-6">
+                  <CarouselItem className="flex basis-1/2 justify-center pl-6 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-42 h-24 sm:w-48 sm:h-30 p-4">
+                      <img src={logoAddison} alt="Addison" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-28 h-16 sm:w-32 sm:h-20">
-                      <div className="text-muted-foreground/30 text-xs">Logo 2</div>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-6 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-42 h-24 sm:w-48 sm:h-30 p-4">
+                      <img src={logoHiTech} alt="Hi-Tech" className="w-full h-full object-contain rotate-90" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-28 h-16 sm:w-32 sm:h-20">
-                      <div className="text-muted-foreground/30 text-xs">Logo 3</div>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-6 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-42 h-24 sm:w-48 sm:h-30 p-4">
+                      <img src={logoIT} alt="IT" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-28 h-16 sm:w-32 sm:h-20">
-                      <div className="text-muted-foreground/30 text-xs">Logo 4</div>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-6 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-42 h-24 sm:w-48 sm:h-30 p-4">
+                      <img src={logoKorloy} alt="Korloy" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-28 h-16 sm:w-32 sm:h-20">
-                      <div className="text-muted-foreground/30 text-xs">Logo 5</div>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-6 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-42 h-24 sm:w-48 sm:h-30 p-4">
+                      <img src={logoKyocera} alt="Kyocera" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-28 h-16 sm:w-32 sm:h-20">
-                      <div className="text-muted-foreground/30 text-xs">Logo 6</div>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-6 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-42 h-24 sm:w-48 sm:h-30 p-4">
+                      <img src={logoMiranda} alt="Miranda" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-28 h-16 sm:w-32 sm:h-20">
-                      <div className="text-muted-foreground/30 text-xs">Logo 7</div>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-6 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-42 h-24 sm:w-48 sm:h-30 p-4">
+                      <img src={logoSizeControl} alt="Size Control" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-28 h-16 sm:w-32 sm:h-20">
-                      <div className="text-muted-foreground/30 text-xs">Logo 8</div>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-6 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-42 h-24 sm:w-48 sm:h-30 p-4">
+                      <img src={logoTaegutec} alt="Taegutec" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-28 h-16 sm:w-32 sm:h-20">
-                      <div className="text-muted-foreground/30 text-xs">Logo 9</div>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-6 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-42 h-24 sm:w-48 sm:h-30 p-4">
+                      <img src={logoTotem} alt="Totem" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-28 h-16 sm:w-32 sm:h-20">
-                      <div className="text-muted-foreground/30 text-xs">Logo 10</div>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-6 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-42 h-24 sm:w-48 sm:h-30 p-4">
+                      <img src={logoVargus} alt="Vargus" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-28 h-16 sm:w-32 sm:h-20">
-                      <div className="text-muted-foreground/30 text-xs">Logo 11</div>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-6 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-42 h-24 sm:w-48 sm:h-30 p-4">
+                      <img src={logoWidia} alt="Widia" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/2 justify-center pl-4 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-28 h-16 sm:w-32 sm:h-20">
-                      <div className="text-muted-foreground/30 text-xs">Logo 12</div>
+                  <CarouselItem className="flex basis-1/2 justify-center pl-6 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-42 h-24 sm:w-48 sm:h-30 p-4">
+                      <img src={logoYG1} alt="YG-1" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
                 </CarouselContent>

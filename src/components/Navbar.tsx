@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import logo from "@/assets/gm-logo.png";
 
 const transition = {
   type: "spring" as const,
@@ -131,7 +130,7 @@ export function Navbar() {
     <div className="top-4 md:top-8 inset-x-0 z-50 px-4 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex-shrink-0">
-          <img src={logo} alt="G M Machinery Store" className="h-10 w-10 sm:h-12 sm:w-12 object-contain" />
+          <span className="text-xl sm:text-2xl font-bold text-foreground">GM Machinery</span>
         </Link>
         <Menu setActive={setActive}>
           <Link to="/" className="hidden sm:block">

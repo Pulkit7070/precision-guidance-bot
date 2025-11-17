@@ -30,12 +30,22 @@ const ContactCTA = () => {
                 <h3 className="text-2xl font-semibold mb-6 text-foreground">Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-lg bg-primary/10">
+                    <div className="p-3 rounded-lg bg-primary/10 flex-shrink-0">
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
-                    <div>
-                      <div className="font-semibold mb-1 text-foreground">Phone</div>
-                      <div className="text-muted-foreground">+91-XXXX-XXXXXX</div>
+                    <div className="flex-1">
+                      <div className="font-semibold mb-2 text-foreground">Phone</div>
+                      <div className="space-y-1.5">
+                        <a href="tel:+919899804420" className="block text-muted-foreground hover:text-primary transition-colors">
+                          +91 98998 04420
+                        </a>
+                        <a href="tel:+919811065121" className="block text-muted-foreground hover:text-primary transition-colors">
+                          +91 98110 65121
+                        </a>
+                        <a href="tel:01146065101" className="block text-muted-foreground hover:text-primary transition-colors">
+                             <span className="text-secondary"> +</span>011-46065101
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -45,7 +55,7 @@ const ContactCTA = () => {
                     </div>
                     <div>
                       <div className="font-semibold mb-1 text-foreground">Email</div>
-                      <div className="text-muted-foreground">info@gmmachinery.com</div>
+                      <div className="text-muted-foreground">21shivamgupta@gmail.com</div>
                     </div>
                   </div>
 
@@ -56,7 +66,7 @@ const ContactCTA = () => {
                     <div>
                       <div className="font-semibold mb-1 text-foreground">Location</div>
                       <div className="text-muted-foreground">
-                        Industrial Area, Andheri East, Mumbai, Maharashtra 400093, India
+                        346, Katra Sheikh Ranjha, Hauz Qazi, Near Chawri Bazar Metro Station, Delhi - 110006
                       </div>
                     </div>
                   </div>
@@ -66,8 +76,7 @@ const ContactCTA = () => {
               <Card className="p-6 bg-card border-border shadow-sm">
                 <h4 className="font-semibold text-lg mb-2 text-foreground">Business Hours</h4>
                 <div className="space-y-1 text-sm text-muted-foreground">
-                  <div>Monday - Friday: 9:00 AM - 6:00 PM</div>
-                  <div>Saturday: 9:00 AM - 2:00 PM</div>
+                  <div>Monday - Saturday: 9:00 AM - 7:00 PM</div>
                   <div>Sunday: Closed</div>
                 </div>
               </Card>
