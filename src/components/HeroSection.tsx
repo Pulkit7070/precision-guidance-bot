@@ -91,64 +91,64 @@ export function HeroSection() {
                 opts={{ loop: true, align: "start" }}
                 plugins={[AutoScroll({ playOnInit: true, speed: 1, stopOnInteraction: false })]}
               >
-                <CarouselContent className="-ml-2">
-                  <CarouselItem className="flex basis-1/3 justify-center pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
+                <CarouselContent className="-ml-1">
+                  <CarouselItem className="flex basis-1/3 justify-center pl-1 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-20 h-14 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
                       <img src={logoAddison} alt="Addison" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/3 justify-center pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
+                  <CarouselItem className="flex basis-1/3 justify-center pl-1 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-20 h-14 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
                       <img src={logoHiTech} alt="Hi-Tech" className="w-full h-full object-contain rotate-90" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/3 justify-center pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
+                  <CarouselItem className="flex basis-1/3 justify-center pl-1 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-20 h-14 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
                       <img src={logoIT} alt="IT" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/3 justify-center pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
+                  <CarouselItem className="flex basis-1/3 justify-center pl-1 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-20 h-14 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
                       <img src={logoKorloy} alt="Korloy" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/3 justify-center pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
+                  <CarouselItem className="flex basis-1/3 justify-center pl-1 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-20 h-14 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
                       <img src={logoKyocera} alt="Kyocera" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/3 justify-center pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
+                  <CarouselItem className="flex basis-1/3 justify-center pl-1 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-20 h-14 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
                       <img src={logoMiranda} alt="Miranda" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/3 justify-center pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
+                  <CarouselItem className="flex basis-1/3 justify-center pl-1 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-20 h-14 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
                       <img src={logoSizeControl} alt="Size Control" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/3 justify-center pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
+                  <CarouselItem className="flex basis-1/3 justify-center pl-1 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-20 h-14 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
                       <img src={logoTaegutec} alt="Taegutec" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/3 justify-center pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
+                  <CarouselItem className="flex basis-1/3 justify-center pl-1 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-20 h-14 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
                       <img src={logoTotem} alt="Totem" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/3 justify-center pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
+                  <CarouselItem className="flex basis-1/3 justify-center pl-1 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-20 h-14 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
                       <img src={logoVargus} alt="Vargus" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/3 justify-center pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
+                  <CarouselItem className="flex basis-1/3 justify-center pl-1 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-20 h-14 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
                       <img src={logoWidia} alt="Widia" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
-                  <CarouselItem className="flex basis-1/3 justify-center pl-2 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
-                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-24 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
+                  <CarouselItem className="flex basis-1/3 justify-center pl-1 sm:basis-1/4 md:basis-1/5 lg:basis-1/6">
+                    <div className="flex shrink-0 items-center justify-center bg-card border border-border rounded-lg natural-shadow hover:shadow-md transition-all w-20 h-14 sm:w-32 sm:h-20 md:w-40 md:h-24 p-1">
                       <img src={logoYG1} alt="YG-1" className="w-full h-full object-contain" />
                     </div>
                   </CarouselItem>
