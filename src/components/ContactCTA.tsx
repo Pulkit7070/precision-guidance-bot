@@ -63,7 +63,7 @@ const ContactCTA = () => {
                     </div>
                     <div className="min-w-0">
                       <div className="font-semibold mb-1 text-foreground text-sm sm:text-base">Email</div>
-                      <a href="mailto:21shivamgupta@gmail.com" className="text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base break-all touch-manipulation">21shivamgupta@gmail.com</a>
+                      <a href="mailto:21shivamgupta@gmail.com" className="text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base break-all touch-manipulation">gmm114@gmail.com</a>
                     </div>
                   </div>
 
