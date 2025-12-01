@@ -1,7 +1,7 @@
 const companies = [
   { name: "GM Machinery Store" },
   { name: "MG Tools Co." },
-  { name: "Rudra Associated" },
+  { name: "Rudra Associates" },
   { name: "GM Machinery Tools Pvt. Ltd.", subtitle: "Manufacturing Unit" },
   { name: "MG Tools Pvt. Ltd.", subtitle: "Manufacturing Unit" },
 ];
